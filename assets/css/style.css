@@ -960,7 +960,7 @@ section {
   height: 50px; /* Ensures the image has a fixed size */
   object-fit: cover;
   border-radius: 50%; /* Optional: makes the image circular */
-  border: 1px solid #B0CB3A;
+  border: 1px solid #8350DF;
 }
 
 

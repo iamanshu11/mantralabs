@@ -400,7 +400,6 @@ p{
   color: #fff;
   transition: 0.3s;
   display: inline-block;
-  line-height: 1;
 }
 
 #footer .footer-top .footer-links ul a:hover {
@@ -963,6 +962,44 @@ section {
   border: 1px solid #8350DF;
 }
 
+.marquee-section {
+  overflow: hidden; /* Ensure images stay inside the container */
+  position: relative;
+}
+
+.marquee-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  gap: 20px;
+}
+
+.marquee {
+  display: flex;
+  gap: 20px; /* Add spacing between images */
+  animation: scroll-marquee 30s linear infinite; /* Controls speed and looping */
+}
+
+.marquee img {
+  width: 150px; /* Adjust image size */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+  background-color: #fff;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
 
 
 @media (max-width: 991px) {
@@ -1043,17 +1080,10 @@ section {
   margin-bottom: 20px;
 }
 
-.trusted-partner-sec{
-  height: 75vh;
-}
 
 .carousel-test-item{
   height: auto;
 }
-
-
-
-
 }
 
 @media (max-width: 786px){

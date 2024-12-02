@@ -309,7 +309,7 @@ p{
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #161616;;
+  background: #000;;
   padding: 40px 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1055,3 +1055,11 @@ section {
 
 
 }
+
+@media (max-width: 786px){
+  .from-silos-padding{
+    padding-top: 160px;
+
+  }
+
+} 

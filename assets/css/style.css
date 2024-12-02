@@ -966,6 +966,10 @@ section {
 
 
 @media (max-width: 991px) {
+  .hero{
+    height: 80vh;
+  }
+
   .hero-text h1 {
     font-size: 30px;
   }

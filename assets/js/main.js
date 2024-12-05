@@ -1,3 +1,56 @@
+// document.addEventListener('DOMContentLoaded', () => {
+//   "use strict";
+
+//   if(typeof window.IntersectionObserver !== 'undefined') {
+//     let options = {
+//       threshold: [0.5, 1]
+//     }
+//     const targets = document.querySelectorAll('.cb');
+//     const locker = document.querySelector('.locker__container');
+//     function handleIntersection(entries) {
+//       entries.map((entry) => {
+//         if (entry.isIntersecting) {
+//           entry.target.current = entry.target.dataset.swap;
+//           document.querySelector(".locker__container ." + entry.target.current).classList.add("active");
+//         } else {
+//           document.querySelector(".locker__container ." + entry.target.current).classList.remove("active");
+//         }
+//       });
+//     }
+//     const observer = new IntersectionObserver(handleIntersection, options);
+//     targets.forEach(target => observer.observe(target));
+//   } else {
+//   }
+
+// });
+
+// Add Scroll Event Listener
+
+// if (typeof window.IntersectionObserver !== 'undefined') {
+//   const options = {
+//     threshold: [0.5, 1],
+//   };
+
+//   const sections = document.querySelectorAll('.cb'); 
+//   const images = document.querySelectorAll('.lock-image'); 
+
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//       const targetImageClass = entry.target.dataset.swap;
+//       const targetImage = document.querySelector(`.${targetImageClass}`);
+
+//       if (entry.isIntersecting) {
+//         images.forEach((img) => img.classList.remove('active')); 
+//         if (targetImage) targetImage.classList.add('active'); 
+//       }
+//     });
+//   }, options);
+
+//   sections.forEach((section) => observer.observe(section));
+// } else {
+//   console.warn('IntersectionObserver is not supported in this browser.');
+// }
+
 
 
 (function() {
@@ -29,6 +82,50 @@ $('.carousel-test').owlCarousel({
     }
   }
 })
+
+$('.carousel-home').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: false,
+  navText: ["<i class='bi bi-arrow-left'></i>", "<i class='bi bi-arrow-right'></i>"],
+  autoplay: false,
+  autoplayTimeout: 3000,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  }
+})
+
+$('.carousel-business').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: false,
+  navText: ["<i class='bi bi-arrow-left'></i>", "<i class='bi bi-arrow-right'></i>"],
+  autoplay: true,
+  autoplayTimeout: 3000,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  }
+})
+
+
   /**
    * Easy selector helper function
    */

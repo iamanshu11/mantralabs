@@ -1273,6 +1273,9 @@ section {
     color: #ffffff;
     border-radius: 15px;
     border: 1px solid #8350DF;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
 }
 
 .file-data img {
@@ -1363,11 +1366,20 @@ section {
     padding-left: 0;
 }
 
+@media (max-width: 1276px) {
+    .file-data {
+        height: auto;
+    }
+}
+
 @media (max-width: 991px) {
     .recent-data-pro {
         height: auto;
     }
     .vert-div {
         display: none;
+    }
+    .file-data {
+        height: auto;
     }
 }

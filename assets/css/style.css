@@ -1375,6 +1375,9 @@ section {
 }
 
 @media (max-width: 991px) {
+  .sec-heading h4{
+    font-size: 18px;
+  }
     .recent-data-pro {
         height: auto;
     }

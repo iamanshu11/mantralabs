@@ -43,7 +43,7 @@
         <div class="container d-flex align-items-center">
 
             <!-- Uncomment below if you prefer to use an image logo -->
-            <a href="index.html" class="logo me-auto"><img src="assets/img/logo.svg" alt="" class="img-fluid"></a>
+            <a href="../" class="logo me-auto"><img src="assets/img/logo.svg" alt="" class="img-fluid"></a>
 
             <nav id="navbar" class="navbar">
                 <ul>
@@ -287,7 +287,7 @@
                 <div class="row align-items-center  justify-content-center mantra-gap mt-5">
                     <div class="col-lg-4">
                         <div class="file-data">
-                            <h4 class="text-white"><img src="assets/img/home/advanced-perf/ic-1.png" width="10px"> Scenario
+                            <h4 class="text-white"><img src="assets/img/home/advanced-perf/ic-1.png" width="10px"> Challenges
                             </h4>
                             <p class="mt-4  text-white"> <img src="assets/img/home/advanced-perf/icon.png" width="10px"> Pace Industries faced challenges with data trapped in silos (Excel, ERP) and a reliance on manual processes for pricing updates, leading to slow and error-prone
                                 reporting.
@@ -734,8 +734,6 @@
                         <img src="assets/img/home/client-logo/sgtradex.png" alt="Image 9">
                         <img src="assets/img/home/client-logo/shell.png" alt="Image 10">
                         <img src="assets/img/home/client-logo/wessex.png" alt="Image 11">
-                        <img src="assets/img/home/client-logo/rakuten.png" alt="Image 12">
-                        <img src="assets/img/home/client-logo/databricks.png" alt="Image 13">
                     </div>
 
                     <div class="marquee">
@@ -750,8 +748,7 @@
                         <img src="assets/img/home/client-logo/sgtradex.png" alt="Image 9">
                         <img src="assets/img/home/client-logo/shell.png" alt="Image 10">
                         <img src="assets/img/home/client-logo/wessex.png" alt="Image 11">
-                        <img src="assets/img/home/client-logo/rakuten.png" alt="Image 12">
-                        <img src="assets/img/home/client-logo/databricks.png" alt="Image 13">
+
                     </div>
                 </div>
             </div>
@@ -906,10 +903,9 @@
                     <div class="col-lg-2 col-6">
                         <div class="trusted-partner-img">
                             <img src="assets/img/home/trusted-partner/img-8.png" class="img-fluid">
-                        </div>
+                        </div> 
                     </div>
                 </div>
-
 
                 <div class="row form-file-top justify-content-center mb-4">
                     <div class="col-lg-10">
@@ -954,21 +950,65 @@
                     </div>
                     <div class="modal-body form-modal-body-pad">
                         <div class="zf-templateWidth">
-                            <form action="https://forms.zohopublic.in/remitso263/form/Mantra/formperma/3lj4jR0YVmPVMpXya0sDdIS1L6h6931uYFnNwfbL__M/htmlRecords/submit" name="form" method="POST" onSubmit="javascript:document.charset='UTF-8'; return zf_ValidateAndSubmit();" accept-charset="UTF-8"
-                                enctype="multipart/form-data" id="form">
-                                <input type="hidden" name="zf_referrer_name" value="">
-                                <input type="hidden" name="zf_redirect_url" value="">
-                                <input type="hidden" name="zc_gad" value="">
+                            <form action='https://forms.zohopublic.in/remitso263/form/Mantra/formperma/3lj4jR0YVmPVMpXya0sDdIS1L6h6931uYFnNwfbL__M/htmlRecords/submit'
+                            name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();'
+                            accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name"
+                                value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                            <input type="hidden" name="zf_redirect_url"
+                                value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                            <input type="hidden" name="zc_gad"
+                                value="">
                                 <div class="zf-templateWrapper">
                                     <div class="zf-subContWrap zf-topAlign">
                                         <ul class="request-pad">
-                                            <li class="zf-tempFrmWrapper zf-large">
-                                                <div class="zf-tempContDiv white-placeholder">
-                                                    <span><input fieldType=9 type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder="Please&#x20;share&#x20;your&#x20;email" /></span>
-                                                    <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                                            <li class="zf-tempFrmWrapper zf-name zf-namelarge">
+                                            <div class="zf-tempContDiv zf-twoType">
+                                                <div class="zf-nameWrapper white-placeholder">
+                                                    <span> <input type="text" maxlength="255" name="Name_First" fieldType=7
+                                                            placeholder="Name" required />
+                                                    </span>
+                                                    </span> </span>
+                                                    <div class="zf-clearBoth"></div>
                                                 </div>
-                                                <div class="zf-clearBoth"></div>
-                                            </li>
+                                                <p id="Name_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                                            </div>
+                                            <div class="zf-clearBoth"></div>
+                                        </li><!---------Name Ends Here---------->
+                                        <!---------Email Starts Here---------->
+                                        <li class="zf-tempFrmWrapper zf-large">
+                                            <div class="zf-tempContDiv white-placeholder">
+                                                <span> <input fieldType=9 type="text" maxlength="255" name="Email" checktype="c5"
+                                                        value="" placeholder="Please&#x20;share&#x20;your&#x20;email" required /></span>
+                                                <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                                            </div>
+                                            <div class="zf-clearBoth"></div>
+                                        </li><!---------Email Ends Here---------->
+                                        <!---------Phone Starts Here---------->
+                                        <li class="zf-tempFrmWrapper zf-large">
+                                            <div class="zf-tempContDiv zf-phonefld">
+                                                <div class="zf-phwrapper zf-phNumber white-placeholder">
+                                                    <span> <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode"
+                                                            maxlength="20" checktype="c7" value="" phoneFormat="1"
+                                                            isCountryCodeEnabled=false fieldType="11"
+                                                            id="international_PhoneNumber_countrycode" valType="number"
+                                                            phoneFormatType="1" placeholder="Please&#x20;share&#x20;your&#x20;phone number" required/>
+                                                     </span>
+                                                    <div class="zf-clearBoth"></div>
+                                                </div>
+                                                <p id="PhoneNumber_error" class="zf-errorMessage" style="display:none;">Invalid value
+                                                </p>
+                                            </div>
+                                            <div class="zf-clearBoth"></div>
+                                        </li><!---------Phone Ends Here---------->
+                                        <!---------Multiple Line Starts Here---------->
+                                        <li class="zf-tempFrmWrapper zf-large">
+                                            <div class="zf-tempContDiv white-placeholder">
+                                                <span> <textarea name="MultiLine" checktype="c1" maxlength="65535"
+                                                        placeholder="Message for us"></textarea> </span>
+                                                <p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                                            </div>
+                                            <div class="zf-clearBoth"></div>
+                                        </li>
                                         </ul>
                                     </div>
                                     <ul>
